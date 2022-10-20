@@ -1,0 +1,29 @@
+AllCops:
+  NewCops: enable
+
+#################### Style ###############################
+
+# "Missing top-level class documentation comment."を無効
+Style/Documentation:
+  Enabled: false
+
+# "Missing frozen string literal comment."を無効
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+# ダブルクォーテーションに統一
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: double_quotes
+
+# Procオブジェクトを生成する際は、lambdaメソッドではなく、->構文を採用
+Style/Lambda:
+  Enabled: true
+  EnforcedStyle: literal
+
+#################### Layout ###########################
+
+# https://docs.rubocop.org/rubocop/1.23/cops_layout.html#layoutfirsthashelementindentation
+Layout/FirstHashElementIndentation:
+  Enabled: true
+  EnforcedStyle: consistent
